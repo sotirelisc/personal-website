@@ -81,6 +81,25 @@
 </head>
 
 <body>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId: "364592840625981",
+        xfbml: true,
+        version: "v2.6"
+      });
+    };
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div class="container-fluid bg-1 text-center">
     <div class="card">
       <img src="me.png" alt="Chris Sotirelis" style="width:100%">
@@ -88,6 +107,9 @@
       <p class="title">Entrepreneur & Software Person💡</p>
       <p class="bio">Interested in digital products, every stage of the lifecycle. From the idea to business plan, UX, development, testing, market.</p>
       👇
+      <br>
+      <div class="fb-messengermessageus" messenger_app_id="364592840625981" page_id="1810023729013825" color="blue" size="standard">
+      </div>
       <div class="social">
         <a href="https://linkedin.com/in/sotirelisc/"><i class="fa fa-linkedin"></i></a>
         <a href="https://github.com/sotirelisc"><i class="fa fa-github"></i></a>
